@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Robbe's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #DCDCDC;
+}
+h1 {
+    margin: 30px 5px 0px 30px;
+}
+p {
+    margin: 0px 5px 10px 40px;
+}
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Active/current link */
+.navbar a.active {
+    background-color: #666;
+    color: white;
+}
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="https://RM2003.github.io/Home.html" class="active">Home</a>
+  <a href="https://RM2003.github.io/Voorbeelden.html">Voorbeelden</a>
+  <a href="https://RM2003.github.io/Contact.html">Contact</a>
+  <a href="https://linkedin.com/uas/login" class="right">Link</a>
+</div>
+
+<h1>Voorbeelden</h1>
+ <svg height="10" width="500">
+  <line x1="20" y1="1" x2="2000" y2="0" style="stroke:#696969;stroke-width:1" />
+</svg> 
+<p>Druk <a href="http://aquanauten.be/portfolio-item/clubduik-18-8-spaanse-duik/">hier</a> voor de spaanse groepsduik <br>
+Druk <a href="https://www.facebook.com/pg/KontichWolves/photos/?tab=album&album_id=2294990050516068&__xts__%5B0%5D=68.ARBHVeViHcR9st5on8otOqgl_nq0nx60TysDQxRr3F1wd1oB-s4tBjI-Sm5T885MMCKIncwg0d3yKwqfakQibIHzVLpNBFYE7s84xfuBBgzxQAQuPqkaP6vpnEHLmxoAlLLzrWptwbVgntz0uG016BHVcaQjSDGNnqDuGvgcQvnXjJU4eKgGSQ-DobcbnfjLZ9uW_g&__tn__=-UC-R">hier</a> voor de startdag van "The Kontich Wolves"</p>
+</body>
+</html>
